@@ -8,19 +8,19 @@ Before to run this script, you need to install Vagrant (www.vagrantup.com), Virt
 
 ## Installation
 
-1. Checkout this Github project
+* Checkout this Github project
 
 ```
 git clone https://github.com/bchevallereau/ephesoft-vagrant
 ```
 
-2. Start your Vagrant box
+* Start your Vagrant box
 
 ```
 cd epehesoft-vagrant
 vagrant up
 ```
 
-3. Open your browser on http://127.0.0.1:8080/dcma/ and start to use Ephesoft!
+* Open your browser on http://127.0.0.1:8080/dcma/ and start to use Ephesoft!
 
 
