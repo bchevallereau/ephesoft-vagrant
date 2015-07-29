@@ -10,7 +10,11 @@ export INSTALLER=$INSTALLER_PATH/Ephesoft_Community_Release_4.0.2.0.zip
 
 cd $INSTALLER_PATH
 
+yum -y -q install dos2unix >> /var/log/ephesoft-install.log 2>&1
+
+dos2unix 00-download.sh
 sh 00-download.sh
+dos2unix 01-install-prerequisites.sh
 sh 01-install-prerequisites.sh
 
 echo 
