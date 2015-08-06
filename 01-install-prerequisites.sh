@@ -14,7 +14,7 @@ if [ ! -f /etc/yum.repos.d/MariaDB.repo ]
     echo "      Creating MariaDB YUM repository..."
 	cp /vagrant/files/MariaDB.repo /etc/yum.repos.d
 fi
-echo "      Installling MariaDB..."
+echo "      Installing MariaDB..."
 yum -y -q install MariaDB-server MariaDB-client >> /var/log/ephesoft-install.log  2>&1
 echo "      Starting MariaDB..."
 service mysql start >> /var/log/ephesoft-install.log 2>&1
